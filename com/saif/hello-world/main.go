@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"GO-BUILD-WITH-BAZEL/com/saif/hello-world/greetings"
+	"fmt"
+)
 
 func main() {
-	fmt.Println("Hello World!")
+	greetings.SayHello()
+
+	fmt.Println(greetings.Greet("M. Geremy"))
 }
